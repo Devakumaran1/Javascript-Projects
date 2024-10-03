@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Accounts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="input-items">
+                <h1>Personal Finance Tracker</h1>
+                <input type="text" placeholder="Transaction Name" id="transactionName">
+                <input type="number" placeholder="Amount" id="transactionAmount">
+                <select name=""   id="transactionCatagory" >
+                    <option value="" class="opt1" disabled selected>- None -</option>
+                    <option value="Income">Income</option>
+                    <option value="Expense">Expense</option>
+                </select>
+                <button class="btn" id="addTransactionBtn">Add Transaction</button>
+            </div>
+        </div>
+        <div class="transaction">
+            <h2>Transactions</h2>
+            <ul id="transactionList"></ul>
+            <h2>Summary</h2>
+            <p>Total Income : <span id="totalIncome">0</span></p>
+            <p>Total Expenses : <span id="totalExpenses">0</span></p>
+            <p>Balance : <span id="balance">0</span></p>
+        </div>
+    </div>
+    
+</body>
+</html>

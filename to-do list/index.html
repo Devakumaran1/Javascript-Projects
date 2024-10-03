@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>To-Do List</h2>
+        <div id="mainbox" class="box-elements">
+            <input type="text" id="todoinput" name="todoinput" placeholder="Add a new Task">
+            <select name="taskstatus" id="taskstatus">
+                <option value="Completed">Completed</option>
+                <option value="Pending">Pending</option>
+            </select>
+            <button type="button" class="btn1" id="addbtn"> Add Task</button>
+            <button type="button" class="btn2" id="deletebtns"> Delete All</button>
+            
+        </div>
+        <ul id="task-list"></ul>
+
+    </div>
+    
+</body>
+</html>
